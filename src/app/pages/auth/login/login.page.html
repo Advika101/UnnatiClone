@@ -1,0 +1,54 @@
+<!-- <app-page-header [config]="headerConfig" (actionEvent)="action($event)"></app-page-header> -->
+<ion-content class="ion-padding">
+  <div class="mx-10">
+  <!-- <app-generic-header
+    [labels]="labels"
+  ></app-generic-header> -->
+  <section>
+    <form  #form="ngForm" (ngSubmit)="onSubmit(form)">
+      <ion-grid>
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+              <h3>Login</h3>
+            </div>
+            <div padding>
+              <ion-item>
+                <ion-input name="email" type="email" placeholder="your@email.com" ngModel required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="password" type="password" placeholder="Password" minlength="8" ngModel required></ion-input>
+              </ion-item>
+            </div>
+            <div padding>
+              <ion-button  size="large" type="submit" [disabled]="form.invalid" expand="block">Login</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </section>
+
+  <!-- <section
+    [ngClass]="{'btn-disabled': form1.myForm.invalid , 'btn-valid':form1.myForm.valid}"
+  >
+  <div class="d-flex flex-justify-center">
+    <ion-button class="mx-0 onboard-button" expand="block" shape="round" (click)="onSubmit()" size="large"
+      >{{"LOGIN"}}</ion-button
+    >
+  </div>
+    <section class="ion-text-center">
+      <div class="my-30">
+        <ion-text class="forgot-section" (click)="goToForgotPassword()">
+          {{"FORGOT_PASSWORD"}}
+        </ion-text>
+        <ion-ripple-effect></ion-ripple-effect>
+      </div>
+    </section>
+    <div class="t-and-c">
+      <p>{{"TERMS_AND_CONDITION"}}
+      <a class='links' href='https://shikshalokam.org/mentoring/privacy-policy'>{{"PRIVACY_POLICY"}}</a> & <a class='links' href='https://shikshalokam.org/mentoring/term-of-use'>{{"TERMS_OF_SERVICE"}}</a></p>
+    </div>
+  </section> -->
+  </div>
+</ion-content>

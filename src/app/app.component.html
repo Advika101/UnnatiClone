@@ -1,0 +1,10 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-header [translucent]="true" class="ion-no-border">
+        <ion-button (click)="addToHomeScreen()">Add to home screen</ion-button>
+      </ion-header>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
